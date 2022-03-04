@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Machine</title>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- ----------------- Bootstrap header START ----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      button {
+        font-weight: bold;
+        background-color: whitesmoke;
+        border: 6px solid silver;
+        margin-left: 5px;
+        margin-top: 20px;
+        width: 150px;
+        padding: 5px;
+      }
+      button:hover {
+        background-color: blue;
+        border: 6px solid purple;
+        color: white;
+      }
+      body {
+        background-image: url(/ATM/blue.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bolder;
+        padding-bottom: 50px;
+      }
+      .form {
+        display: inline-block;
+      }
+
+      .hidden {
+        display: none;
+      }
+      .label {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-family: Arial">ATM Machine</h1>
+
+    <!-- We will put our React component inside this div. -->
+    <div id="root"></div>
+
+    <!-- Load React. -->
+    <script
+      src="https://unpkg.com/react/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!-- Load our React component. -->
+
+    <script src="atm.jsx" defer type="text/babel"></script>
+  </body>
+</html>
